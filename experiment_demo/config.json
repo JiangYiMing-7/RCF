@@ -1,0 +1,27 @@
+{
+  "data_root": "/path/to/your/dataset",
+  "save_root": "./experiment_demo",
+  "seed": 42,
+  "device": null,
+  "point_input_channels": 0,
+  "point_out_channels": 128,
+  "image_backbone": "resnet18",
+  "image_pretrained": false,
+  "num_classes": 3,
+  "num_proposals": 256,
+  "train_split": "training",
+  "val_split": "validation",
+  "classes": [
+    "Car",
+    "Cyclist",
+    "Pedestrian"
+  ],
+  "num_epochs": 5,
+  "batch_size": 2,
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "iou_pos_thresh": 0.6,
+  "iou_neg_thresh": 0.45,
+  "score_threshold": 0.3,
+  "resume_checkpoint": null
+}
